@@ -1,0 +1,64 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+mon-backend-node/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backend
+mon-backend-node/uploads/*
+!mon-backend-node/uploads/.gitkeep
+
+# Vendor (Composer)
+/vendor
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Database
+*.sql
+*.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Fichiers Excel de test dans public
+public/*.xlsx
+public/*.xls
+!public/Articles_Qte (5).xlsx

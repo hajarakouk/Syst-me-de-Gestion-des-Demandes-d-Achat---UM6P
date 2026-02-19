@@ -1,0 +1,32 @@
+.map-section {
+  background: #fff;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+
+.campus-list {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.campus-btn {
+  background: #f7f4f4 !important;         /* fond noir */
+  color: #000000 !important;              /* texte blanc */
+  border: 2px solid #ffffff !important;
+  border-radius: 6px;
+  padding: 8px 18px;
+  margin: 0 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.campus-btn:hover,
+.campus-btn.active {
+  background: #000000 !important;      /* orange */
+  color: #fff !important;
+  border-color: #000000 !important;
+}

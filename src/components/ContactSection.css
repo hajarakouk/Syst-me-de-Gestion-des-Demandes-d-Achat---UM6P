@@ -1,0 +1,227 @@
+/* Container principal */
+.contact-modern-section {
+  background: #fff;
+  padding: 60px 0 40px 0;
+}
+.contact-modern-container {
+  display: flex;
+  max-width: 1300px;           /* augmenté de 1100px à 1300px */
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;         /* un peu plus arrondi */
+  box-shadow: 0 6px 28px rgba(60, 60, 120, 0.1); /* plus doux et étendu */
+  gap: 64px;                   /* plus d’espace entre les éléments */
+  padding: 48px 40px 40px 40px; /* plus de padding autour */
+  align-items: flex-start;
+}
+
+/* Colonne gauche */
+.contact-modern-info {
+  flex: 1.1;
+  min-width: 280px;
+}
+.contact-modern-label {
+  color: #e6501e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contact-modern-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #002147;
+  line-height: 1.2;
+}
+.contact-modern-desc {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 28px;
+}
+.contact-modern-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.contact-modern-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.contact-modern-icon {
+  color: #e6501e;
+  background: #fffbe6;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(234,179,8,0.08);
+}
+.contact-modern-item-label {
+  font-weight: 700;
+  color: #002147;
+  font-size: 1.05rem;
+}
+.contact-modern-item-value {
+  color: #666;
+  font-size: 0.98rem;
+}
+
+/* Colonne droite : formulaire */
+.contact-modern-form {
+  flex: 1;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.07);
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 320px;
+}
+.contact-modern-form-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #002147;
+}
+.contact-modern-form-desc {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+.contact-modern-form-row {
+  display: flex;
+  gap: 14px;
+}
+.contact-modern-form-row input {
+  flex: 1;
+}
+.contact-modern-form input,
+.contact-modern-form textarea {
+  border: 1.5px solid #eee;
+  border-radius: 7px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  margin-bottom: 0;
+  background: #fafafa;
+  color: #002147;
+  outline: none;
+  transition: border 0.2s;
+}
+.contact-modern-form input:focus,
+.contact-modern-form textarea:focus {
+  border: 1.5px solid #e6501e;
+  background: #fff;
+}
+.contact-modern-form textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 200px;
+}
+.contact-modern-btn {
+  background: #e6501e;
+  color: #232323;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 0;
+  font-size: 1.08rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(234,179,8,0.08);
+}
+.contact-modern-btn:hover {
+  background: #e6501e;
+  color: #111;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-modern-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 28px 8px 18px 8px;
+  }
+  .contact-modern-form {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Section Chiffres Clés moderne */
+.stats-modern-section {
+  background: transparent;
+  padding: 48px 0 32px 0;
+  display: flex;
+  justify-content: center;
+}
+.stats-modern-container {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.08);
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 36px 48px;
+  max-width: 1100px;
+  width: 100%;
+}
+.stats-modern-left {
+  min-width: 210px;
+}
+.stats-modern-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #002147;
+  margin-bottom: 8px;
+}
+.stats-modern-desc {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.stats-modern-list {
+  display: flex;
+  gap: 48px;
+}
+.stats-modern-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+}
+.stats-modern-number {
+  color: #ee0a0a;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.stats-modern-label {
+  color: #002147;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .stats-modern-container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 28px 10px;
+    align-items: flex-start;
+  }
+  .stats-modern-list {
+    gap: 24px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .stats-modern-item {
+    min-width: 80px;
+  }
+}
